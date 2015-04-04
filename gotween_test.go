@@ -34,6 +34,24 @@ var easingTests = []*easingTest{
 			&easingTestData{-0.1, 0.0, true},
 		},
 	},
+	&easingTest{
+		easingFunc: EaseInQuad,
+		tests: []*easingTestData{
+			&easingTestData{0.0, 0.0, false},
+			&easingTestData{0.1, 0.010000000000000002, false},
+			&easingTestData{0.2, 0.04000000000000001, false},
+			&easingTestData{0.3, 0.09, false},
+			&easingTestData{0.4, 0.16000000000000003, false},
+			&easingTestData{0.5, 0.25, false},
+			&easingTestData{0.6, 0.36, false},
+			&easingTestData{0.7, 0.48999999999999994, false},
+			&easingTestData{0.8, 0.6400000000000001, false},
+			&easingTestData{0.9, 0.81, false},
+			&easingTestData{1.0, 1.0, false},
+			&easingTestData{1.1, 0.0, true},
+			&easingTestData{-0.1, 0.0, true},
+		},
+	},
 }
 
 // Test all easing functions with a simple table driven test.
